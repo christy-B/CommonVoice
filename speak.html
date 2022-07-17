@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>voice</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arbutus">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/listen.css">
+    <link rel="stylesheet" href="assets/css/speak.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="width: auto;margin-left: 5px;">
+    <ul class="nav nav-tabs speaknav" style="margin-top: 25px;margin-left: 23px;">
+        <li class="nav-item"><a class="nav-link active" href="index.html" style="border-radius: 34px;border-style: none;padding-top: 15px;"><i class="material-icons">keyboard_backspace</i></a></li>
+        <li class="nav-item" style="border-style: none;"><a class="nav-link haut" href="speak.html">Parler</a></li>
+        <li class="nav-item"><a class="nav-link haut" href="listen.html">Ecouter</a></li>
+    </ul>
+    <div class="float-right" style="width: 100px;margin-top: -44px;"><span>0</span><span>/5</span><span>&nbsp;extraits</span></div>
+    <div class="float-right" id="severalbutton" style="width: 250px;height: auto;">
+        <div class="float-right" style="margin-top: 58px;width: 100%;">
+            <div class="d-none float-right" style="background: var(--white);border-radius: 27px;height: 42.5px;padding: 8px;margin-right: 0;border: 1px solid rgb(230,230,231);margin-top: 0px;margin-bottom: 0;width: 200px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-play" style="color: rgb(45,34,34);font-size: 29px;">
+                    <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"></path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-tallymark-1" style="color: var(--gray);font-size: 29px;padding-top: 0px;width: 28px;height: 30px;opacity: 0.33;filter: brightness(137%);">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-loader" style="color: rgb(45,34,34);font-size: 29px;">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="6" x2="12" y2="3"></line>
+                    <line x1="16.25" y1="7.75" x2="18.4" y2="5.6"></line>
+                    <line x1="18" y1="12" x2="21" y2="12"></line>
+                    <line x1="16.25" y1="16.25" x2="18.4" y2="18.4"></line>
+                    <line x1="12" y1="18" x2="12" y2="21"></line>
+                    <line x1="7.75" y1="16.25" x2="5.6" y2="18.4"></line>
+                    <line x1="6" y1="12" x2="3" y2="12"></line>
+                    <line x1="7.75" y1="7.75" x2="5.6" y2="5.6"></line>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-tallymark-1" style="color: var(--gray);font-size: 29px;padding-top: 0px;width: 28px;height: 30px;opacity: 0.33;filter: brightness(137%);">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                </svg><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">1</button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="color: rgb(45,34,34);font-size: 23px;">
+                    <path d="M11 14.9861C11 15.5384 11.4477 15.9861 12 15.9861C12.5523 15.9861 13 15.5384 13 14.9861V7.82831L16.2428 11.0711L17.657 9.65685L12.0001 4L6.34326 9.65685L7.75748 11.0711L11 7.82854V14.9861Z" fill="currentColor"></path>
+                    <path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor"></path>
+                </svg>
+                <div></div>
+            </div>
+            <div class="float-right" style="background: var(--white);border-radius: 27px;height: 42.5px;padding: 8px;margin-right: 0px;border: 1px solid rgb(230,230,231);margin-top: 0px;margin-bottom: 0px;width: 200PX;"><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">1</button>
+                <div></div><span>commencer l'enregi...</span>
+            </div>
+            <div class="d-none float-right" style="background: var(--white);border-radius: 27px;height: 42.5px;padding: 8px;margin-right: 0px;border: 1px solid rgb(230,230,231);margin-top: 0px;margin-bottom: 0px;width: 200PX;"><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">1</button>
+                <div></div><span>annuler l'enregistre..</span>
+            </div>
+        </div>
+        <div class="float-right" style="width: 100%;margin-top: 5px;">
+            <div class="d-none float-right" style="background: var(--white);border-radius: 27px;height: 42.5px;padding: 8px;margin-right: 0;border: 1px solid rgb(230,230,231);margin-top: 0px;margin-bottom: 0;width: 200px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-play" style="color: rgb(45,34,34);font-size: 29px;">
+                    <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"></path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-tallymark-1" style="color: var(--gray);font-size: 29px;padding-top: 0px;width: 28px;height: 30px;opacity: 0.33;filter: brightness(137%);">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-loader" style="color: rgb(45,34,34);font-size: 29px;">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="6" x2="12" y2="3"></line>
+                    <line x1="16.25" y1="7.75" x2="18.4" y2="5.6"></line>
+                    <line x1="18" y1="12" x2="21" y2="12"></line>
+                    <line x1="16.25" y1="16.25" x2="18.4" y2="18.4"></line>
+                    <line x1="12" y1="18" x2="12" y2="21"></line>
+                    <line x1="7.75" y1="16.25" x2="5.6" y2="18.4"></line>
+                    <line x1="6" y1="12" x2="3" y2="12"></line>
+                    <line x1="7.75" y1="7.75" x2="5.6" y2="5.6"></line>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-tallymark-1" style="color: var(--gray);font-size: 29px;padding-top: 0px;width: 28px;height: 30px;opacity: 0.33;filter: brightness(137%);">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                </svg><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">2</button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="color: rgb(45,34,34);font-size: 23px;">
+                    <path d="M11 14.9861C11 15.5384 11.4477 15.9861 12 15.9861C12.5523 15.9861 13 15.5384 13 14.9861V7.82831L16.2428 11.0711L17.657 9.65685L12.0001 4L6.34326 9.65685L7.75748 11.0711L11 7.82854V14.9861Z" fill="currentColor"></path>
+                    <path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor"></path>
+                </svg>
+                <div></div>
+            </div>
+            <div class="float-right" style="background: TRANSPARENT;border-radius: 0px;height: 42.5px;padding: 8px;margin-right: 0px;margin-top: 0px;margin-bottom: 0px;width: 200PX;border: 1px none rgb(230,230,231);"><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">2</button></div>
+            <div class="d-none float-right" style="background: var(--white);border-radius: 27px;height: 42.5px;padding: 8px;margin-right: 0px;border: 1px solid rgb(230,230,231);margin-top: 0px;margin-bottom: 0px;width: 200PX;"><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">2</button>
+                <div></div><span>annuler l'enregistre..</span>
+            </div>
+        </div>
+        <div class="float-right" style="width: 100%;margin-top: 5px;">
+            <div class="d-none float-right" style="background: var(--white);border-radius: 27px;height: 42.5px;padding: 8px;margin-right: 0;border: 1px solid rgb(230,230,231);margin-top: 0px;margin-bottom: 0;width: 200px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-play" style="color: rgb(45,34,34);font-size: 29px;">
+                    <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"></path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-tallymark-1" style="color: var(--gray);font-size: 29px;padding-top: 0px;width: 28px;height: 30px;opacity: 0.33;filter: brightness(137%);">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-loader" style="color: rgb(45,34,34);font-size: 29px;">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="6" x2="12" y2="3"></line>
+                    <line x1="16.25" y1="7.75" x2="18.4" y2="5.6"></line>
+                    <line x1="18" y1="12" x2="21" y2="12"></line>
+                    <line x1="16.25" y1="16.25" x2="18.4" y2="18.4"></line>
+                    <line x1="12" y1="18" x2="12" y2="21"></line>
+                    <line x1="7.75" y1="16.25" x2="5.6" y2="18.4"></line>
+                    <line x1="6" y1="12" x2="3" y2="12"></line>
+                    <line x1="7.75" y1="7.75" x2="5.6" y2="5.6"></line>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-tallymark-1" style="color: var(--gray);font-size: 29px;padding-top: 0px;width: 28px;height: 30px;opacity: 0.33;filter: brightness(137%);">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                </svg><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">3</button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="color: rgb(45,34,34);font-size: 23px;">
+                    <path d="M11 14.9861C11 15.5384 11.4477 15.9861 12 15.9861C12.5523 15.9861 13 15.5384 13 14.9861V7.82831L16.2428 11.0711L17.657 9.65685L12.0001 4L6.34326 9.65685L7.75748 11.0711L11 7.82854V14.9861Z" fill="currentColor"></path>
+                    <path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor"></path>
+                </svg>
+                <div></div>
+            </div>
+            <div class="float-right" style="background: transparent;border-radius: 0px;height: 42.5px;padding: 8px;margin-right: 0px;margin-top: 0px;margin-bottom: 0px;width: 200PX;border: 1px none rgb(230,230,231);"><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">3</button>
+                <div></div>
+            </div>
+            <div class="d-none float-right" style="background: var(--white);border-radius: 27px;height: 42.5px;padding: 8px;margin-right: 0px;border: 1px solid rgb(230,230,231);margin-top: 0px;margin-bottom: 0px;width: 200PX;"><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">3</button>
+                <div></div><span>annuler l'enregistre..</span>
+            </div>
+        </div>
+        <div class="float-right" style="width: 100%;margin-top: 5px;margin-right: 0px;">
+            <div class="d-none float-right" style="background: var(--white);border-radius: 27px;height: 42.5px;padding: 8px;margin-right: 0;border: 1px solid rgb(230,230,231);margin-top: 0px;margin-bottom: 0;width: 200px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-play" style="color: rgb(45,34,34);font-size: 29px;">
+                    <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"></path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-tallymark-1" style="color: var(--gray);font-size: 29px;padding-top: 0px;width: 28px;height: 30px;opacity: 0.33;filter: brightness(137%);">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-loader" style="color: rgb(45,34,34);font-size: 29px;">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="6" x2="12" y2="3"></line>
+                    <line x1="16.25" y1="7.75" x2="18.4" y2="5.6"></line>
+                    <line x1="18" y1="12" x2="21" y2="12"></line>
+                    <line x1="16.25" y1="16.25" x2="18.4" y2="18.4"></line>
+                    <line x1="12" y1="18" x2="12" y2="21"></line>
+                    <line x1="7.75" y1="16.25" x2="5.6" y2="18.4"></line>
+                    <line x1="6" y1="12" x2="3" y2="12"></line>
+                    <line x1="7.75" y1="7.75" x2="5.6" y2="5.6"></line>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-tallymark-1" style="color: var(--gray);font-size: 29px;padding-top: 0px;width: 28px;height: 30px;opacity: 0.33;filter: brightness(137%);">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                </svg><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">4</button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="color: rgb(45,34,34);font-size: 23px;">
+                    <path d="M11 14.9861C11 15.5384 11.4477 15.9861 12 15.9861C12.5523 15.9861 13 15.5384 13 14.9861V7.82831L16.2428 11.0711L17.657 9.65685L12.0001 4L6.34326 9.65685L7.75748 11.0711L11 7.82854V14.9861Z" fill="currentColor"></path>
+                    <path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor"></path>
+                </svg>
+                <div></div>
+            </div>
+            <div class="float-right" style="background: transparent;border-radius: 0px;height: 42.5px;padding: 8px;margin-right: 0px;margin-top: 0px;margin-bottom: 0px;width: 200PX;border: 1px none rgb(230,230,231);"><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">4</button>
+                <div></div>
+            </div>
+            <div class="d-none float-right" style="background: var(--white);border-radius: 27px;height: 42.5px;padding: 8px;margin-right: 0px;border: 1px solid rgb(230,230,231);margin-top: 0px;margin-bottom: 0px;width: 200PX;"><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">4</button>
+                <div></div><span>annuler l'enregistre..</span>
+            </div>
+        </div>
+        <div class="float-right" style="width: 100%;margin-top: 5px;">
+            <div class="d-none float-right" style="background: var(--white);border-radius: 27px;height: 42.5px;padding: 8px;margin-right: 0;border: 1px solid rgb(230,230,231);margin-top: 0px;margin-bottom: 0;width: 200px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-play" style="color: rgb(45,34,34);font-size: 29px;">
+                    <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"></path>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-tallymark-1" style="color: var(--gray);font-size: 29px;padding-top: 0px;width: 28px;height: 30px;opacity: 0.33;filter: brightness(137%);">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-loader" style="color: rgb(45,34,34);font-size: 29px;">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="6" x2="12" y2="3"></line>
+                    <line x1="16.25" y1="7.75" x2="18.4" y2="5.6"></line>
+                    <line x1="18" y1="12" x2="21" y2="12"></line>
+                    <line x1="16.25" y1="16.25" x2="18.4" y2="18.4"></line>
+                    <line x1="12" y1="18" x2="12" y2="21"></line>
+                    <line x1="7.75" y1="16.25" x2="5.6" y2="18.4"></line>
+                    <line x1="6" y1="12" x2="3" y2="12"></line>
+                    <line x1="7.75" y1="7.75" x2="5.6" y2="5.6"></line>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-tallymark-1" style="color: var(--gray);font-size: 29px;padding-top: 0px;width: 28px;height: 30px;opacity: 0.33;filter: brightness(137%);">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                </svg><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">5</button><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="color: rgb(45,34,34);font-size: 23px;">
+                    <path d="M11 14.9861C11 15.5384 11.4477 15.9861 12 15.9861C12.5523 15.9861 13 15.5384 13 14.9861V7.82831L16.2428 11.0711L17.657 9.65685L12.0001 4L6.34326 9.65685L7.75748 11.0711L11 7.82854V14.9861Z" fill="currentColor"></path>
+                    <path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor"></path>
+                </svg>
+                <div></div>
+            </div>
+            <div class="float-right" style="background: transparent;border-radius: 0px;height: 42.5px;padding: 8px;margin-right: 0px;margin-top: 0px;margin-bottom: 0px;width: 200PX;border: 1px none rgb(230,230,231);"><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">5</button>
+                <div></div>
+            </div>
+            <div class="d-none float-right" style="background: var(--white);border-radius: 27px;height: 42.5px;padding: 8px;margin-right: 0px;border: 1px solid rgb(230,230,231);margin-top: 0px;margin-bottom: 0px;width: 200PX;"><button class="btn btn-primary float-right" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);">5</button>
+                <div></div><span>annuler l'enregistre..</span>
+            </div>
+        </div>
+    </div>
+    <div class="text-left" id="haut" style="margin: 0 auto;margin-top: 30px;width: 380px;border-radius: 0px;margin-bottom: 20px;"><span class="text-center d-block cliquer" id="clickparler">&nbsp;Cliquez sur&nbsp; &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-mic" style="font-size: 22px;padding-bottom: 0px;color: var(--red);margin-bottom: 14px;">
+                <path fill-rule="evenodd" d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"></path>
+                <path fill-rule="evenodd" d="M10 8V3a2 2 0 1 0-4 0v5a2 2 0 1 0 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"></path>
+            </svg>&nbsp; &nbsp;puis lisez la phrase à haute voix&nbsp; &nbsp;</span><span class="text-center d-none cliquer" id="clickparler-4">&nbsp;appuyez sur&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-stop" style="font-size: 22px;padding-bottom: 0px;color: var(--red);margin: 0px;">
+                <path fill-rule="evenodd" d="M3.5 5A1.5 1.5 0 0 1 5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5zM5 4.5a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5H5z"></path>
+            </svg>&nbsp; une fois terminer&nbsp; &nbsp;</span><span class="text-center d-none cliquer" id="clickparler">&nbsp;L'enregistrement est trop court&nbsp;</span><span class="text-center d-none cliquer" id="clickparler-2">&nbsp;L'enregistrement est trop long</span><span class="text-center d-none cliquer" id="clickparler-1">Formidable!&nbsp; &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-mic" style="font-size: 22px;padding-bottom: 0px;color: var(--red);margin-bottom: 14px;">
+                <path fill-rule="evenodd" d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"></path>
+                <path fill-rule="evenodd" d="M10 8V3a2 2 0 1 0-4 0v5a2 2 0 1 0 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"></path>
+            </svg>&nbsp; enregistrer votre prochain extrait</span><span class="text-center d-none cliquer" id="clickparler-1">Continuez comme ça et enregistrer-en un de plus</span><span class="text-center d-none cliquer" id="clickparler-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-mic" style="font-size: 22px;padding-bottom: 0px;color: var(--red);margin-bottom: 14px;">
+                <path fill-rule="evenodd" d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"></path>
+                <path fill-rule="evenodd" d="M10 8V3a2 2 0 1 0-4 0v5a2 2 0 1 0 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"></path>
+            </svg>&nbsp; C'est le dernier!</span></div><div class="slideshow-container" style="width:50%; margin:0 auto; background-color:white; font-size:24px;">
+
+<div class="mySlides" style=" display: none;
+  padding: 80px;
+  text-align: center;">
+  Le détroit qui se situe à l'ouest est l'un des plus profonds de l'archipel.
+</div>
+
+<div class="mySlides"style=" display: none;
+  padding: 80px;
+  text-align: center;">
+La cause était une défaillance mécanique suivie par une erreur du pilote.
+</div>
+
+<div class="mySlides"style=" display: none;
+  padding: 80px;
+  text-align: center;">
+ Progressivement, il se consacre aux dossiers concernant l'outre-mer, notamment dans le pacifique.
+</div>
+	<div class="mySlides"style=" display: none;
+  padding: 80px;
+  text-align: center;">
+Antoine Fleyfel a de meme effectué des recherches sur le dialecte arabe libanais.
+</div>
+
+	<div class="mySlides"style=" display: none;
+  padding: 80px;
+  text-align: center;">
+ Il prend diverses décisions d'inspiration physiocrate et libérale, comme la libre circulation des grains.
+</div>
+	<style scoped>
+            @media (max-width: 575px) {
+							.mySlides{
+								padding:5px!important;
+							}
+            }
+        </style>
+</div>
+
+    <div class="text-center" id="several2but" style="width: 100%;height: 41px;margin-top: 15px;border-style: none;"><button class="btn btn-primary text-center" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);height: 27px;margin-right: 30px;">1</button><button class="btn btn-primary text-center" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);margin-right: 30px;">2</button><button class="btn btn-primary text-center" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);margin-right: 30px;">3</button><button class="btn btn-primary text-center" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);margin-right: 30px;">4</button><button class="btn btn-primary text-center" type="button" style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;border-radius: 22px;background: #d3d5d6;width: 20px;padding-top: 0px;padding-right: 17px;padding-bottom: 1px;padding-left: 9px;color: var(--gray-dark);margin-right: 30px;">5</button></div>
+    <div id="gradient-lineaire" style="margin-top: 100px;height: 24px;"><span class="d-block content-icon" id="stopspan" style="padding-top: 25px;padding-right: 26px;padding-bottom: 14px;padding-left: 25px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-stop icons" id="icons" style="font-size: 25px;padding-bottom: 0px;color: var(--red);margin-bottom: 14px;" onclick="functionParlerstop();plusSlides(1);">
+        <path fill-rule="evenodd" d="M3.5 5A1.5 1.5 0 0 1 5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5zM5 4.5a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5H5z"></path>
+    </svg><span id="barre"></span></span><span id="parlerspan" class="content-icon" style="padding-top: 25px;padding-right: 26px;padding-bottom: 14px;padding-left: 25px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-mic icons" id="icons" style="font-size: 22px;padding-bottom: 0px;color: var(--red);margin-bottom: 14px;" onclick="functionParler();functionclickParler;">
+        <path fill-rule="evenodd" d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"></path>
+        <path fill-rule="evenodd" d="M10 8V3a2 2 0 1 0-4 0v5a2 2 0 1 0 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"></path>
+    </svg></span><span id="barre"></span></div>
+    <div id="bas" style="padding-left: 170px;padding-right: 170px;margin-top: 100px;filter: saturate(200%);"><button class="btn btn-primary" id="rac" type="button" style="color: #000000;border-style: solid;border-color: var(--gray);border-radius: 23px;height: 44px;width: 134.3px;background: transparent;filter: brightness(170%) grayscale(12%);margin-right: 35px;"><i class="typcn typcn-keyboard"></i>&nbsp; Raccourcis</button><button class="btn btn-primary" id="signaler" type="button" style="color: #000000;border-style: solid;border-color: var(--gray);border-radius: 23px;height: 44px;width: 134.3px;background: transparent;filter: brightness(170%) grayscale(12%);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-flag">
+                <path fill-rule="evenodd" d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"></path>
+            </svg>&nbsp; Signaler</button><button class="btn btn-primary disabled float-right" id="envoyer" type="button" style="color: #000000;border-style: solid;border-color: var(--gray);border-radius: 23px;height: 44px;width: 134.3px;background: transparent;filter: brightness(170%) grayscale(12%);" disabled="">&nbsp; Envoyer</button><button class="btn btn-primary float-right visible next" id="passer" type="button" style="color: #000000;border-style: solid;border-color: var(--gray);border-radius: 23px;height: 44px;width: 134.3px;background: transparent;filter: brightness(170%) grayscale(12%);margin-right: 25px;" onclick="plusSlides(1)">  Passer  <i class="fas fa-angle-double-right"></i></button></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</body>
+
+</html>

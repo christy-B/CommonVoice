@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>voice</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arbutus">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/listen.css">
+    <link rel="stylesheet" href="assets/css/speak.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg text-left">
+        <div class="container-fluid"><a class="navbar-brand" href="#"><img class="image" src="assets/img/Capture%20d’écran%202021-03-30%20104554.png"></a>
+            <div id="column"><div class="col"><a href="speak.html"><i class="icon ion-ios-mic-outline" style="color: var(--red);font-size: 21px;"></i><span style="font-size: 22px;margin-left: 6px;color: var(--red);">0</span></a></div>
+                <hr id="separateur"><div class="col"><a href="listen.html"><i class="icon ion-play" style="color: var(--success);font-size: 23px;"></i><span style="font-size: 23px;margin-left: 7px;color: var(--success);">0</span></a></div>
+            </div><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item" id="item-container">
+                        <div class="container" id="contain">
+                            <div class="row"><div class="col speak" style="border-style: none;"><a href="speak.html"  style="text-decoration:none;"><i class="icon ion-ios-mic-outline" style="color: var(--red);"></i><span style="font-size: 26px;margin-left: 6px;color: var(--red);">0</span></a></div>
+                                <div class="col-md-4 separateur"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-tallymark-1" style="font-size: 43px;color: var(--gray);width: 33px;">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    </svg></div><div class="col-md-4"><a href="listen.html" style="text-decoration:none;"><i class="icon ion-play" style="color: var(--success);"></i><span style="font-size: 26px;margin-left: 7px;color: var(--success);">0</span></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link connecter" href="#" style="border-width: 1px;border-style: solid;border-radius: 25px;">Se connecter/S&#39;inscrire</a></li>
+                    <li class="nav-item" id="langue" style="width: auto;"><a class="nav-link langue" href="#" style="border-color: rgba(0, 0, 0, 0.5);border-top-color: rgba(0,;border-right-color: 0,;border-bottom-color: 0,;border-left-color: 0.5);background: #efeded;font-size: 17px;width: auto;height: 43px;padding: 0;">&nbsp;<code style="width: auto; height:200px;"><i class="icon ion-earth" style="font-size: 22px;"></i>
+<select name="pets" id="pet-select" size="1" style="font-size: 18px;border: 0;background: transparent;height:50px;width:auto;">
+    <option value="fr">FR</option>
+		<option value="en">EN</option>
+</select>
+</code></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid text-center text-sm-center text-md-center text-lg-center text-xl-center flex-sm-column flex-md-column flex-lg-column flex-xl-row" id="container2" style="border-top: 1px solid #cbd3dc;margin-top: 15px;padding-right: 0px;padding-left: 0px;">
+        <div class="row" style="margin-right: 0px;margin-left: 0px;"><div class="col-md-12 col-lg-6 text-lg-center text-xl-center justify-content-center" id="bordernone" style="padding-top: 150px;" onmousemove="functionMouseOver(event)" onmouseout="functionMouseOut()">
+    <div class="text-center float-right d-lg-flex justify-content-center justify-content-lg-center align-items-lg-start mic" id="recorder" style="  width: 75.5px;
+  height: 76px;
+  border-radius: 59px;
+  background: var(--white);
+  border-style: none;
+  padding-top: 15px;
+  box-shadow: 3px 3px 20px 3px rgb(205,62,79);
+  margin: -20px 215px 0px 0px;
+"><a href="speak.html"><i class="icon ion-ios-mic-outline" id="micro"style="  color: var(--red);
+"></i></a></div>
+    <h1 class="text-center headers" id="headers">Parler</h1>
+    <h5 class="description">Donnez un peu de votre voix</h5>
+	<div class="row" id="bloc" style="font-size:11px;margin:30px 30px -100px 0px;visibility:hidden;">
+		<style scoped>
+            @media (max-width: 520px) {
+							#bloc{
+								display:block;
+								margin-top:120px!important;
+							}
+							.col_1, .col_2{
+								margin-bottom:20px;
+							}
+            }
+        </style>
+    <div class="col col_1" >L’enregistrement d’échantillons de voix fait partie intégrante de notre collecte de données ouvertes ; certains diront même que c’est la partie la plus amusante.</div>
+    <div class="col col_2">Aidez-nous à atteindre 1 200</div>
+    <div class="col col_3" col_1>Progression du jour
+			<span>297</span> / 1200 <em>Échantillons enregistrés</em></div>
+  </div>
+	<img class="desc" src="assets/img/Capture_d_écran_2021-03-31_190132-removebg-preview.png" style="height:300px; width:100%;top: 0;bottom: 0px; margin-left:-25px" />
+</div><div class="col-md-12 col-lg-6 text-lg-center text-xl-center justify-content-center" id="bordernone" style="padding-top: 150px;" onmousemove="_functionMouseOver(event)" onmouseout="_functionMouseOut()">
+    <div class="text-center float-right mic" id="_recorder"style="width: 75.5px;height: 76px;border-radius: 59px;background: var(--white);border-style: none;padding-top: 19px;padding-left: 8px;margin-top: -20px;margin-right: 215px;box-shadow: 3px 3px 20px 3px #196c49;"><a href="listen.html">
+			
+			<i class="icon ion-play" id="_micro"style="color: var(--success);"></i></a></div>
+    <h1 class=" text-center headers"  >Ecouter</h1>
+    <h5 class="description1">Aidez-nous à valider les échantillons vocaux</h5>
+	<div class="row" id="block" style="font-size:11px;margin:30px 30px -100px 0px;visibility:hidden;">
+    <div class="col" >La validation des échantillons vocaux donnés est également importante pour la mission Common Voice. Prenez l’écoute et aidez-nous à créer des données vocales libres de qualité.</div>
+    <div class="col">Aidez-nous à atteindre 1 200</div>
+    <div class="col">Progression du jour
+			<span>297</span>/ 1200 <em>Échantillons enregistrés</em></div>
+  </div>
+		<style scoped>
+            @media (max-width: 520px) {
+							#block{
+								display:block;
+								margin-top:120px!important;
+							}
+							.col, .col{
+								margin-bottom:20px;
+							}
+            }
+        </style>
+	<img class="desc" src="assets/img/Capture_d_écran_2021-03-31_190215-removebg-preview.png" style="width: 100%;height:300px; top:0px;bottom: 0;margin-left:-22px" />
+</div></div>
+    </div>
+    <div class="container-fluid" style="background: #8b949c;">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center"><button class="btn btn-primary div_bas" type="button" style="width: 120px;background: rgba(255,255,255,0);border-style: none;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-patch-question" style="font-size: 20px;border-color: #000000;color: 00000;">
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z"></path>
+                        <path fill-rule="evenodd" d="M10.273 2.513l-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"></path>
+                    </svg><span class="d-block" style="font-size: 18px;border-color: var(--dark);color: #000000;">Questions fréquentes&nbsp;</span></button></div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center align-self-start"><button class="btn btn-primary div_bas" type="button" style="background: rgba(255,255,255,0);border-style: none;"><i class="fa fa-comment-o" style="font-size: 21px;color: #000000;"></i><span class="d-block" style="font-size: 18px;color: rgb(0,0,0);">Discourse&nbsp;</span></button></div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center"><button class="btn btn-primary div_bas" type="button" style="width: 152.1px;background: rgba(255,255,255,0);border-style: none;"><i class="fa fa-volume-control-phone" style="font-size: 20px;color: #000000;"></i><span class="d-block" style="font-size: 18px;color: #000000;">Nous contacter&nbsp;</span></button></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" style="height: 255px;background: #000000;"><img src="assets/img/Capture_d_écran_2021-04-01_132947-removebg-preview.png" style="margin-top: 31px;"></div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</body>
+
+</html>

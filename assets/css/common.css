@@ -1,0 +1,160 @@
+.nav-item {
+  margin-right: 25px;
+}
+
+.col.speak {
+  width: 100px;
+}
+
+.icon.ion-ios-mic-outline {
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+.icon.ion-play {
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+@media (max-width: 991px) {
+  #item-container {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  #column {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  #column {
+    margin-left: 200px;
+  }
+}
+
+#separateur {
+  margin-top: -2px;
+  width: 40px;
+  margin-bottom: -4px;
+}
+
+.nav-link.connecter {
+  width: auto;
+  margin-left: -30px;
+}
+
+@media (width: 768px) {
+  .icon.ion-earth {
+    font-size: 16px;
+  }
+}
+
+@media (width: 768px) {
+  .nav-link.langue {
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-link.connecter {
+    text-align: center;
+    font-weight: bold;
+    color: white!important;
+    background-color: black;
+    margin-top: 120px;
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-link.langue {
+    background-color: white!important;
+  }
+}
+
+@media (max-width: 991px) {
+  #langue {
+    margin-left: 25px;
+    background-color: white;
+    padding-left: 20px;
+    margin-top: -110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #bordernone {
+    border-right: 1px solid #cbd3dc;
+  }
+}
+
+@media (max-width: 370px) {
+  .image {
+    width: 150px;
+  }
+}
+
+@media (max-width: 991px) {
+  #container2 {
+    margin-top: 70px!important;
+  }
+}
+
+@media (max-width: 512px) {
+  .float-right.mic {
+    margin-top: 100px!important;
+  }
+}
+
+@media (max-width: 512px) {
+  .headers {
+    text-align: center;
+    width: 150px;
+    margin: auto;
+  }
+}
+
+.description {
+  width: 270px;
+  margin: auto;
+  word-wrap: break-word;
+}
+
+body {
+  background-color: rgb(247,247,247)!important;
+}
+
+.nav.nav-tabs.speaknav {
+}
+
+.nav.nav-tabs.speaknav {
+}
+
+@media (max-width: 575px) {
+  #div_bas {
+    width: 100%;
+  }
+}
+
+#div_bas {
+  width: auto;
+}
+
+@media (max-width: 428px) {
+  #recorder {
+    width: 75px!important;
+    margin: 0 auto!important;
+    margin-top: -50px!important;
+  }
+}
+
+@media (max-width: 428px) {
+  #_recorder {
+    width: 75px!important;
+    margin: 0 auto!important;
+    margin-top: -50px!important;
+  }
+}
+
